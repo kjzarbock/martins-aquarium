@@ -1,5 +1,5 @@
 import { getFish } from "./database.js"
-import { FishList } from "./fishlist.js"
+import { FishList } from "./fish/fishlist.js"
 
 /*
     What is the CSS selector for the element where you
