@@ -15,5 +15,5 @@ import { FishList } from "./fish/fishlist.js"
     const allFish = getFish()
     
     for (const fish of allFish) {
-        console.log(fish)
+        //console.log(fish)
     }

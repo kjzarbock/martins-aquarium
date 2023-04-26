@@ -25,3 +25,38 @@ export const FishList = () => {
 
     return htmlString
 }
+
+const fishCopy = getFish()
+
+export const mostHolyFish = () => {
+    const holyFish = []
+    for (const fish of fishCopy) {
+        if (fish.length % 3 === 0){
+            holyFish.push(fish)
+        }
+    }
+    return holyFish
+}
+console.log(mostHolyFish())
+
+export const soldierFish = () => {
+    const soldiers = []
+    for (const fish of fishCopy) {
+        if (fish.length % 5 === 0){
+            soldiers.push(fish)
+        }
+    } 
+    return soldiers
+}
+console.log(soldierFish())
+
+export const nonHolyFish = () => {
+    const regularFish = []
+    for (const fish of fishCopy) {
+        if (fish.length % 3 !== 0 && fish.length % 5 !== 0){
+            regularFish.push(fish)
+        }
+    }
+    return regularFish
+}
+console.log(nonHolyFish())
